@@ -7,34 +7,34 @@
                 | Basic field input styling for a sign-up or contact forms. Built to be 'light' and simple in appearance.
         .hspace40
         .col-1of2
-            form.basic(action='#', method='post')
-                fieldset.inputs
+            form.form(action='#', method='post')
+                fieldset.fields
                     ol
                         li.string.required
                             label
                                 | First name
                                 abbr(title='required')
                                     sup *
-                            input(type='text', maxlength='255', size='50')
+                            input.field(type='text', maxlength='255', size='50')
                             p.rules The name people call you most.
                         li.string.required
                             label
                                 | Last name
                                 abbr(title='required')
                                     sup *
-                            input(type='text', maxlength='255', size='50')
+                            input.field(type='text', maxlength='255', size='50')
                             p.rules The name your coach called you.
                         li.text.required
                             label What brings you here?
-                            textarea(cols='40', rows='10')
+                            textarea.field(cols='40', rows='10')
                             p.rules Write whatever you'd like.
                         li.date.required
-                            fieldset
+                            fieldset.fields
                                 legend.label
                                     label Birth Date
                                 ol
                                     li
-                                        select
+                                        select.field
                                             option(value='')
                                             option(selected='selected', value='1') January
                                             option(value='2') February
@@ -49,7 +49,7 @@
                                             option(value='11') November
                                             option(value='12') December
                                     li
-                                        select
+                                        select.field
                                             option(value='')
                                             option(selected='selected', value='1') 1
                                             option(value='2') 2
@@ -83,7 +83,7 @@
                                             option(value='30') 30
                                             option(value='31') 31
                                     li
-                                        select
+                                        select.field
                                             option(value='')
                                             option(selected='selected', value='2005') 2005
                                             option(value='2006') 2006
@@ -101,19 +101,19 @@
                                 | Social Security Number
                                 abbr(title='required')
                                     sup *
-                            input(type='text', size='50')
+                            input.field(type='text', size='50')
                             p.rules
                                 | Your <u>REAL</u> number. Don't be lying to us now.
                         li.numeric.required
                             label How much money is in your wallet?
-                            input(type='text', size='50', value='$')
+                            input.field(type='text', size='50', value='$')
                             p.rules Pocket lint and buttons do not count.
                         li.select.required
                             label
                                 | Have you ever had your identity stolen?
                                 abbr(title='required')
                                     sup *
-                            select
+                            select.field
                                 option(value='1') Yes
                                 option(value='2') No
                                 option(value='3') Maybe
@@ -122,7 +122,7 @@
                                 option(value='6') I have no identity to steal
                         li.select.optional
                             label How stupid are you?
-                            select
+                            select.field
                                 option(value='')
                                 option(value='1') Not much
                                 option(value='2') Kinda
@@ -131,68 +131,68 @@
                                 option(value='5') Certified idiot
                                 option(value='6') I'm surprised I have a computer
                         li.radio.optional
-                            fieldset
+                            fieldset.fields
                                 legend Gender
                                 ol
                                     li
                                         label
-                                            input(type='radio', name='1', value='false')
+                                            input.field(type='radio', name='1', value='false')
                                             | Male
                                     li
                                         label
-                                            input(type='radio', name='2', value='true')
+                                            input.field(type='radio', name='2', value='true')
                                             | Female
                         li.check_boxes.optional
-                            fieldset
+                            fieldset.fields
                                 legend Where can we search for money?
                                 ol
                                     li
                                         label
-                                            input(type='hidden', value='')
-                                            input(type='checkbox', value='1')
+                                            input.field(type='hidden', value='')
+                                            input.field(type='checkbox', value='1')
                                             | Bank accounts
                                     li
                                         label
                                             input(type='hidden', value='')
-                                            input(type='checkbox', value='2')
+                                            input.field(type='checkbox', value='2')
                                             | Mattress
                                     li
                                         label
                                             input(type='hidden', value='')
-                                            input(type='checkbox', value='3')
+                                            input.field(type='checkbox', value='3')
                                             | Office safe
                                     li
                                         label
                                             input(type='hidden', name='3', value='')
-                                            input(type='checkbox', value='4')
+                                            input.field(type='checkbox', value='4')
                                             | Couch cushions
                         li
-                            fieldset.buttons
+                            fieldset.fields
                                 ol
                                     li.commit
-                                        input.create.cancel(type='submit', value='Cancel')
+                                        input.btn.medium.gray.flat.round4(type='submit', value='Cancel')
                                     li.commit
-                                        input.create(type='submit', value='Next Step')
+                                        input.btn.medium.green.flat.round4(type='submit', value='Next Step')
 
         .col-1of2.last
             .well
                 form.basic(action='#', method='post')
-                    fieldset.inputs
+                    fieldset.fields
                         ol
                             li.string.required
                                 label
                                     | Success
                                     abbr(title='required')
                                         sup *
-                                input.success(type='text', maxlength='255', size='50')
+                                input.field.success(type='text', maxlength='255', size='50')
                             li.string.required
                                 label
                                     | Error
                                     abbr(title='required')
                                         sup *
-                                input.error(type='text', maxlength='255', size='50')
+                                input.field.error(type='text', maxlength='255', size='50')
                                 p.rules.error Your username must consist of between 6 and 16 characters.
                             li.string.required
                                 label.disabled Disabled
-                                input.disabled(type='text', maxlength='255', size='50')
+                                input.field.disabled(type='text', maxlength='255', size='50')
         .hspace60
