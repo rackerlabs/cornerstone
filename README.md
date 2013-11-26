@@ -1,5 +1,7 @@
 # Cornerstone
 
+http://rackerlabs.github.io/cornerstone/
+
 HarpJS application to house custom CSS framework
 
 ## Basic usage
