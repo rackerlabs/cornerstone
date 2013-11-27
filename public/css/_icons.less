@@ -1,3 +1,5 @@
+@import "_variables.less";
+
 /* ================================================================
 	ICONS: Small (16px-ish)
 ================================================================ */
@@ -881,44 +883,6 @@ span.pinpoint-icon:after {
   height: 7px;
 }
 
-/* PLAY ICON (Tiny "playhead") â€” <span class="play-icon"> */
-span.play-icon {
-  content: "";
-  position: relative;
-  background-color: #1E82D7;
-  top: 2px;
-  left: 0px;
-  width: 16px;
-  height: 15px;
-  display: inline-block;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  vertical-align: text-top;
-}
-
-span.play-icon.left {
-  margin: 0 5px 0 0;
-}
-
-span.play-icon.right {
-  margin: 0 0 0 5px;
-}
-
-span.play-icon:after {
-  content: "";
-  position: absolute;
-  background-color: transparent;
-  border-top: 5px solid transparent;
-  border-bottom: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-left: 5px solid #FFFFFF;
-  bottom: 2px;
-  left: 6px;
-  width: 0px;
-  height: 0px;
-}
-
 /* VIDEO ICON (film strip) â€” <span class="video-icon"> */
 span.video-icon {
   content: "";
@@ -1045,4 +1009,27 @@ span.form-icon.left {
 
 span.form-icon.right {
   margin: 0 0 0 5px;
+}
+
+/* --- dynamic density icon sprite --- */
+
+span.icon {
+  position: relative;
+  display: inline-block;
+  background-image: url('http://f96bb70f1ff194e3b686-6a1f0be81bdf28a63f5fcf21842b6ecd.r29.cf2.rackcdn.com/icon-sprite.png');
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+@media @mq-retina {
+	background-image: url('http://f96bb70f1ff194e3b686-6a1f0be81bdf28a63f5fcf21842b6ecd.r29.cf2.rackcdn.com/icon-sprite@2x.png');
+}
+span.icon-play {
+  top: 2px;
+  width: 16px;
+  height: 15px;
+  background-position: 16px 15px;
+  background-position: -1px -1px;
+}
+@media @mq-retina {
+	background-position: -1px -1px;
 }
