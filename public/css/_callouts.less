@@ -64,9 +64,6 @@ blockquote cite:before {
 
 .quote {
   border: 0 none;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 140%;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
@@ -76,6 +73,13 @@ blockquote cite:before {
   background-color: #E4E4E4;
   padding: 25px;
   margin: 0;
+}
+
+.quote p {
+  font-size: 16px;
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 130%;
 }
 
 .quotepoint {
@@ -91,16 +95,17 @@ blockquote cite:before {
 }
 
 .quote p:before {
-  content: "â€œ";
+  content: none;
 }
 
 .quote p:after {
-  content: "â€";
+  content: none;
 }
 
 .customername p {
-  font-size: 0.82em;
-  font-weight: normal;
+  font-size: 13px;
+  font-size: 0.89rem;
+  font-weight: 600;
   line-height: 100%;
   text-transform: none;
   padding: .25em 0 0 0;
@@ -108,7 +113,8 @@ blockquote cite:before {
 
 .companyname p {
   font-size: 10px;
-  font-weight: normal;
+  font-size: 0.67rem;
+  font-weight: 400;
   line-height: 100%;
   text-transform: none;
   padding: .25em 0 0 0;
@@ -183,7 +189,7 @@ blockquote cite:before {
 	CALLOUTS: Announcements / Alerts
 ================================================================ */
 
-.announcementpop {
+.announcement {
   display: block;
   list-style-type: none;
   border: 1px solid #D1D1D1;
@@ -194,7 +200,7 @@ blockquote cite:before {
   -moz-background-clip: padding;
   background-clip: padding-box;
   background-color: #FFFFFF;
-  margin: 1em 0;
+  margin: 0;
   padding: 20px;
   line-height: 150%;
   position: relative;
@@ -204,19 +210,9 @@ blockquote cite:before {
   box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.45);
 }
 
-.announcementpop h5 {
-  padding: 0 25px 0 0;
-  margin: 0 0 5px 0;
-}
-
 .announcementpop p {
   margin-bottom: 0;
-  padding: 0 25px 0 0;
-  font-size: 14px;
   line-height: 130%;
-  font-style: italic;
-  font-family: @font-family-sans-serif;
-  font-weight: 300;
 }
 
 .announcementpop cite {
@@ -241,8 +237,12 @@ blockquote cite:before {
   vertical-align: middle;
 }
 
+.announcementpop div.logo {
+  margin-right:25px;
+  vertical-align: top;
+}
+
 .announcementpop div img {
-  margin-right: 25px;
   max-width: 120px;
   vertical-align: top;
 }
