@@ -4,6 +4,14 @@ http://rackerlabs.github.io/cornerstone/
 
 HarpJS application to house custom CSS framework
 
+## Quickstart
+
+CSS files ready for use:
+
+http://rackerlabs.github.io/cornerstone/css/main.css
+http://rackerlabs.github.io/cornerstone/css/responsive.css
+http://rackerlabs.github.io/cornerstone/css/tooltips.css
+
 ## Basic usage
 
 1. [Install HarpJS](http://harpjs.com/docs/quick-start)
