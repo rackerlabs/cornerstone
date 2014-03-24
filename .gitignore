@@ -1,7 +1,5 @@
 .DS_Store
-Thumb.db
-
-.idea
-*.iml
-
-.vagrant
+.sass-cache
+Gemfile.lock
+site/css
+site/_site
